@@ -1,1 +1,29 @@
 @use "./variables" as *;
+
+// Text Styling mixins
+@mixin large-header-text {
+  font-family: $header-font-family;
+  font-weight: $bold-font-weight;
+  font-size: $large-header-font-size;
+}
+// standard header
+@mixin header-text {
+  font-family: $header-font-family;
+  font-weight: $semibold-font-weight;
+  font-size: $header-font-size;
+}
+// subheader(card)
+@mixin subheader-text {
+  @include header-text;
+  font-size: $subheader-font-size;
+}
+//
+@mixin paragraph-text {
+  font-family: $text-font-family;
+  font-weight: $regular-font-weight;
+  font-size: $paragraph-font-size;
+}
+@mixin small-paragraph-text {
+  @include paragraph-text;
+  font-size: $small-paragraph-font-size;
+}

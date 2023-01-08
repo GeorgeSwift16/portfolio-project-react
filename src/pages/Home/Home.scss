@@ -1,0 +1,6 @@
+@use "../../styles/abstracts-var-mixins/variables" as *;
+.Home {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 100%;
+}

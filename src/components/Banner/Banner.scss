@@ -1,0 +1,19 @@
+@use "../../styles/abstracts-var-mixins/variables" as *;
+.banner {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $black;
+  color: $orange;
+  .banner__title-container {
+    .banner__heading {
+      text-align: center;
+    }
+  }
+  .banner__menu-container {
+    align-self: flex-end;
+  }
+}

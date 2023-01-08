@@ -1,2 +1,14 @@
-@use "../Abstracts-var-mixins/variables" as *;
-@use "../Abstracts-var-mixins/mixins" as *;
+@use "../abstracts-var-mixins/variables" as *;
+@use "../abstracts-var-mixins/mixins" as *;
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include header-text;
+}
+p {
+  @include paragraph-text;
+}
