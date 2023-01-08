@@ -1,10 +1,10 @@
 import "./Home.scss";
-import Banner from "../../components/Banner/Banner";
+import Header from "../../containers/HomePage/Header/Header";
 
 const Home = () => {
   return (
     <div className="Home">
-      <Banner />
+      <Header />
       <p>hello there sir</p>
     </div>
   );
