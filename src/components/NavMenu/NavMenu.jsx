@@ -1,21 +1,14 @@
 import "./NavMenu.scss";
-
+import siteData from "../../data/siteInputData.json";
 const NavMenu = () => {
-  return (
-    <nav className="navigation-menu">
-      <a href="#" className="navigation-menu__link">
-        Home
-      </a>
-      <a href="#" className="navigation-menu__link">
-        About
-      </a>
-      <a href="#" className="navigation-menu__link">
-        Projects
-      </a>
-      <a href="#" className="navigation-menu__link">
-        Get In Touch
-      </a>
-    </nav>
-  );
+  const menuLinks = siteData.navigationLinksList.map((element) => (
+    <a
+      href={`#${element}`}
+      className={`navigation-menu__link navigation-menu__link--${element}`}
+    >
+      {element}
+    </a>
+  ));
+  return <nav className="navigation-menu">{menuLinks}</nav>;
 };
 export default NavMenu;
