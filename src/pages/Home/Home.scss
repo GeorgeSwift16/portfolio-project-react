@@ -1,6 +1,8 @@
 @use "../../styles/abstracts-var-mixins/variables" as *;
-.Home {
+@use "../../styles/main.scss" as *;
+.home {
   width: 100vw;
   display: grid;
   grid-template-columns: 100%;
+  background-color: var(--theme-primary-color);
 }

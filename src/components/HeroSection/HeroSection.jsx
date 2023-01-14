@@ -1,11 +1,14 @@
-import "./Header.scss";
+import "./HeroSection.scss";
 
-const Header = () => {
+const HeroSection = () => {
   return (
     <div className="header">
-      <h2 className="header__greeting">
-        Hey I'm
-        <span className="header__greeting highlighted-text"> George Swift</span>
+      <h2 className="header__subheading">
+        Hey I&apos;m
+        <span className="header__subheading highlighted-text">
+          {" "}
+          George Swift
+        </span>
       </h2>
       <h1 className="header__heading">
         A Trainee{" "}
@@ -17,4 +20,4 @@ const Header = () => {
     </div>
   );
 };
-export default Header;
+export default HeroSection;

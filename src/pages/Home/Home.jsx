@@ -1,9 +1,9 @@
 import "./Home.scss";
-import Header from "../../containers/HomePage/Header/Header";
+import Header from "../../containers/Header/Header";
 
 const Home = () => {
   return (
-    <div className="Home">
+    <div className="home">
       <Header />
       <p>hello there sir</p>
     </div>

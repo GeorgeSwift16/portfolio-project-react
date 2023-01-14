@@ -2,3 +2,10 @@
 @use "./abstracts-var-mixins/variables" as *;
 @use "./abstracts-var-mixins/mixins" as *;
 @use "./base/typography" as *;
+
+:root {
+  // these are the variables we can update the name of so we use these variables throughout the
+  --theme-primary-color: #{$black};
+  --theme-secondary-color: #{$white};
+  --theme-tertiary-color: #{$orange};
+}

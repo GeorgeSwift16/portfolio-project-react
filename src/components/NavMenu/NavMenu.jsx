@@ -1,7 +1,8 @@
 import "./NavMenu.scss";
-import siteData from "../../data/siteInputData.json";
+import { navigationLinksList } from "../../data/siteInputData.json";
+
 const NavMenu = () => {
-  const menuLinks = siteData.navigationLinksList.map((element) => (
+  const menuLinks = navigationLinksList.map((element) => (
     <a
       href={`#${element}`}
       className={`navigation-menu__link navigation-menu__link--${element}`}
