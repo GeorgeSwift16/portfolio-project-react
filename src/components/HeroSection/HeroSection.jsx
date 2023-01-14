@@ -1,5 +1,9 @@
+// import ThemeContext from "../../context/ThemeContext";
+// import { useContext } from "react";
 import "./HeroSection.scss";
 
+// const { theme } = useContext(ThemeContext);
+// console.log(theme);
 const HeroSection = () => {
   return (
     <div className="header">
