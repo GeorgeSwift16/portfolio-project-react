@@ -1,0 +1,12 @@
+{
+  "Default": {
+    "--theme-primary-color": "#1e1e1e",
+    "--theme-secondary-color": "#ffffff",
+    "--theme-tertiary-color": "#f06423"
+  },
+  "Light": {
+    "--theme-primary-color": "White",
+    "--theme-secondary-color": "Blue",
+    "--theme-tertiary-color": "Orange"
+  }
+}

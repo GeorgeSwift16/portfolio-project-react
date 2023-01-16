@@ -1,30 +1,25 @@
 import { createContext } from "react";
-import { useState } from "react";
 
-export const ThemeContext = createContext({ theme: "Default" });
+import { useState, useEffect } from "react";
+// eslint-disable-next-line no-unused-vars
+import { Default, Light } from "../data/themes/themeData.json";
+export const ThemeContext = createContext({ themeName: "Default" });
 
 export const ThemeContextProvider = ({ children }) => {
-  const [theme, setTheme] = useState("Default");
-  // const root = document.getElementById("root")
-  // const root2 = document.documentElement.style
-  // console.log(root);
-  // console.log(root2);
-  // const handleThemeColorUpdate = (themeName) => {
+  const [themeName, setThemeName] = useState("Default");
 
-  //     if (themeName = "Light") {
-  //         root.style.setProperty(--theme-primary-color, "pink")
-  //         root.style.setProperty(--theme-secondary-color, "green")
-  //         root.style.setProperty(--theme-tertiary-color, "blue")
-  //     }
-  //     return
-  // }
+  const handleThemeColorUpdate = (themeName) => {
+    Object.entries(themeName).forEach((element) =>
+      document.documentElement.style.setProperty(element[0], element[1])
+    );
+  };
 
-  // useEffect(() => {
-  // handleThemeColorUpdate(theme)
-  // }, [theme])
+  useEffect(() => {
+    handleThemeColorUpdate(themeName);
+  }, [themeName]);
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ themeName, setThemeName }}>
       {children}
     </ThemeContext.Provider>
   );

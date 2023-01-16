@@ -4,12 +4,10 @@ import Layout from "../../components/Layout/Layout";
 import { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
 const Home = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { themeName } = useContext(ThemeContext);
   console.log(ThemeContext);
-  console.log(theme);
-  setTheme("light");
-  console.log(ThemeContext);
-  console.log(theme);
+  console.log(themeName);
+
   return (
     <Layout>
       <div className="home">
