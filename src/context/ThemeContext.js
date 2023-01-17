@@ -2,14 +2,14 @@ import { createContext } from "react";
 
 import { useState, useEffect } from "react";
 // eslint-disable-next-line no-unused-vars
-import { Default, Light } from "../data/themes/themeData.json";
+import themeData from "../data/themes/themeData.json";
 export const ThemeContext = createContext({ themeName: "Default" });
 
 export const ThemeContextProvider = ({ children }) => {
   const [themeName, setThemeName] = useState("Default");
 
   const handleThemeColorUpdate = (themeName) => {
-    Object.entries(themeName).forEach((element) =>
+    Object.entries(themeData[themeName]).forEach((element) =>
       document.documentElement.style.setProperty(element[0], element[1])
     );
   };
