@@ -4,6 +4,7 @@ import { navigationLinksList } from "../../data/siteInputData.json";
 const NavMenu = () => {
   const menuLinks = navigationLinksList.map((element) => (
     <a
+      key={Symbol({ element })}
       href={`#${element}`}
       className={`navigation-menu__link navigation-menu__link--${element}`}
     >
