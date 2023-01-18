@@ -3,6 +3,8 @@ import Header from "../../containers/Header/Header";
 import Layout from "../../components/Layout/Layout";
 import { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
+import Banner from "../../components/Banner/Banner";
+
 const Home = () => {
   const { themeName } = useContext(ThemeContext);
   console.log(ThemeContext);
@@ -10,10 +12,8 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className="home">
-        <Header />
-        <p>hello there sir</p>
-      </div>
+      <Banner />
+      <Header />
     </Layout>
   );
 };

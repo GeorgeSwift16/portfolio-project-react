@@ -1,10 +1,12 @@
 import "./NavMenu.scss";
-import { navigationLinksList } from "../../data/siteInputData.json";
+import siteData from "../../data/siteInputData.js";
 
 const NavMenu = () => {
-  const menuLinks = navigationLinksList.map((element) => (
+  const { navigationLinksList } = siteData;
+  console.log(navigationLinksList);
+  const menuLinks = navigationLinksList.map((element, index) => (
     <a
-      key={Symbol({ element })}
+      key={index}
       href={`#${element}`}
       className={`navigation-menu__link navigation-menu__link--${element}`}
     >
