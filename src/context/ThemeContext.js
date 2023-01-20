@@ -1,7 +1,6 @@
 import { createContext } from "react";
 
 import { useState, useEffect } from "react";
-// eslint-disable-next-line no-unused-vars
 import themeData from "../data/themes/themeData.json";
 export const ThemeContext = createContext({ themeName: "Default" });
 

@@ -8,6 +8,7 @@ const NavMenu = () => {
     <a
       key={index}
       href={`#${element}`}
+      // placeholder href - to update with react router link
       className={`navigation-menu__link navigation-menu__link--${element}`}
     >
       {element}
