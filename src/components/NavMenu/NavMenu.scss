@@ -5,18 +5,18 @@
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
   align-items: center;
-  @include subheader-text;
+
   .navigation-menu__link {
     text-align: center;
-    padding: 0.5rem;
-    margin: 0.2rem 0.8rem;
+    padding: 0.3rem;
     &:nth-child(n) {
       color: $white;
       text-decoration-color: $orange;
       &:hover {
         color: white;
-        text-decoration: 3px underline $white;
+        text-decoration: 0.125rem underline $white;
         &::first-letter {
           color: $orange;
         }
@@ -27,18 +27,19 @@
       text-decoration-color: $white;
       &:hover {
         color: $orange;
-        text-decoration: 3px underline $white;
+        text-decoration: 0.125rem underline $white;
         border: white;
         &::first-letter {
           color: $white;
         }
-        &::after {
-          content: "!";
-        }
       }
     }
     &:active {
-      box-shadow: 0px 0px 1.4rem -0.12rem rgba(255, 255, 255, 0.67);
+      text-shadow: 0.125rem 0.175rem 1rem $orange;
+      border-radius: 2rem;
     }
   }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
 }
