@@ -1,0 +1,31 @@
+@use "../../styles/abstracts-var-mixins/variables" as *;
+@use "../../styles/abstracts-var-mixins/mixins" as *;
+@use "../../styles/main.scss" as *;
+
+.hero-section {
+  border-radius: 3rem 1rem;
+  background-color: $black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1rem;
+  border: 10px solid $orange;
+  .hero-section__subheading {
+    color: $white;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    .highlighted-text {
+      text-decoration: 0.125rem underline $orange;
+    }
+  }
+
+  .hero-section__heading {
+    color: $white;
+    text-align: right;
+    .highlighted-text {
+      color: $orange;
+      text-decoration: 0.125rem underline $white;
+    }
+  }
+}

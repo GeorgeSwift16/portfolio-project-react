@@ -1,7 +1,2 @@
 @use "../../styles/abstracts-var-mixins/variables" as *;
 @use "../../styles/main.scss" as *;
-
-.header__heading {
-  background-color: var(--theme-tertiary-color);
-  color: var(--theme-secondary-color);
-}

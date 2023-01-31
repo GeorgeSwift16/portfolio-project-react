@@ -6,19 +6,18 @@ import "./HeroSection.scss";
 // console.log(theme);
 const HeroSection = () => {
   return (
-    <div className="header">
-      <h2 className="header__subheading">
-        Hey I&apos;m
-        <span className="header__subheading highlighted-text">
-          {" "}
-          George Swift
+    <div className="hero-section">
+      <h2 className="hero-section__subheading">
+        👋 Hey I&apos;m{" "}
+        <span className="hero-section__subheading highlighted-text">
+          George Swift!
         </span>
       </h2>
-      <h1 className="header__heading">
+      <h1 className="hero-section__heading">
         A Trainee{" "}
-        <span className="header__heading highlighted-text">
-          Software Developer{" "}
-        </span>
+        <span className="hero-section__heading highlighted-text">
+          Software Developer
+        </span>{" "}
         based in Bristol.
       </h1>
     </div>

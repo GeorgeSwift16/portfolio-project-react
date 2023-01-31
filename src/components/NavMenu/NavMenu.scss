@@ -2,6 +2,8 @@
 @use "../../styles/abstracts-var-mixins/mixins" as *;
 
 .navigation-menu {
+  @include paragraph-text;
+  font-weight: 500;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -39,7 +41,4 @@
       border-radius: 2rem;
     }
   }
-}
-
-@media screen and (min-width: $tablet-breakpoint) {
 }

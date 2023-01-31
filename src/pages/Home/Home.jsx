@@ -3,7 +3,6 @@ import Header from "../../containers/Header/Header";
 
 import { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
-import Banner from "../../components/Banner/Banner";
 
 const Home = () => {
   const { themeName } = useContext(ThemeContext);
@@ -12,7 +11,6 @@ const Home = () => {
 
   return (
     <>
-      <Banner />
       <Header />
     </>
   );
