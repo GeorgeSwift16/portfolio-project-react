@@ -4,7 +4,7 @@
 
 .hero-section {
   border-radius: 3rem 1rem;
-  background-color: $black;
+  background-color: rgba(255, 255, 255, 0.13);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -12,6 +12,7 @@
   padding: 1rem;
   border: 10px solid $orange;
   .hero-section__subheading {
+    font-weight: $regular-font-weight;
     color: $white;
     font-size: 1rem;
     padding: 0.5rem 0;

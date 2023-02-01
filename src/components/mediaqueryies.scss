@@ -1,0 +1,15 @@
+@media screen and (min-width: $mobile-breakpoint) {
+}
+@media screen and (min-width: $tablet-breakpoint) {
+}
+@media screen and (min-width: $desktop-breakpoint) {
+}
+@media screen and (min-width: $large-desktop-breakpoint) {
+}
+@media screen and (min-width: $extra-large-desktop-breakpoint) {
+}
+$mobile-breakpoint: 320px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+$large-desktop-breakpoint: 1440px;
+$extra-large-desktop-breakpoint: 2560px;

@@ -10,9 +10,9 @@ const Home = () => {
   console.log(themeName);
 
   return (
-    <>
+    <div className="home">
       <Header />
-    </>
+    </div>
   );
 };
 export default Home;

@@ -1,4 +1,5 @@
 @use "../../styles/abstracts-var-mixins/variables" as *;
+
 .banner {
   width: 100%;
   display: flex;
@@ -6,8 +7,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0.4rem;
-  background-color: $black;
   color: $orange;
+  border-radius: 0 2rem;
+  margin-bottom: 20px;
 
   .banner__title-container {
     flex-grow: 2;
@@ -21,8 +23,10 @@
     flex-grow: 1;
   }
 }
-
-// @media screen and (min-width: $tablet-breakpoint) {
-//   .banner__title-container {
-//   }
-// }
+@media screen and (min-width: 600px) {
+  .banner {
+    .banner__title-container {
+      display: inline;
+    }
+  }
+}

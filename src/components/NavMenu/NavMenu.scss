@@ -7,18 +7,24 @@
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   .navigation-menu__link {
+    margin: 0.5rem;
     text-align: center;
-    padding: 0.3rem;
+    padding: 0.4rem;
+    border-radius: 0.2rem 1rem;
+    box-shadow: inset 0px 0px 0px 0.1px rgb(255, 250, 250),
+      1px 1px 5px 0px rgba(159, 161, 155, 0.9);
     &:nth-child(n) {
       color: $white;
       text-decoration-color: $orange;
       &:hover {
         color: white;
         text-decoration: 0.125rem underline $white;
+        box-shadow: inset 1px 1px 1px 0.1px rgb(240, 100, 35),
+          4px 4px 5px 0px rgb(240, 100, 35);
         &::first-letter {
           color: $orange;
         }
@@ -40,5 +46,11 @@
       text-shadow: 0.125rem 0.175rem 1rem $orange;
       border-radius: 2rem;
     }
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .navigation-menu {
+    justify-content: flex-end;
   }
 }
